@@ -10,7 +10,7 @@ install_reqs = parse_requirements('requirements.txt')
 reqs = [str(ir.req) for ir in install_reqs]
 
 setup(
-    name="corenlp_xml",
+    name="corenlp-xml-lib",
     version="0.0.1",
     author="Robert Elwell",
     author_email="robert.elwell@gmail.com",
