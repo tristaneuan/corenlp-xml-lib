@@ -115,10 +115,10 @@ class Sentence():
     def sentiment(self):
         """
         :return: the sentiment value of this sentence
-        :rtype int:
+        :rtype float:
         """
         if self._sentiment is None:
-            self._sentiment = int(self._element.get('sentiment'))
+            self._sentiment = float(self._element.get('sentiment', 0))
         return self._sentiment
 
     def _get_tokens_dict(self):
